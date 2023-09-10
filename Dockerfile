@@ -4,3 +4,6 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends \
     iputils-ping curl wget
 
+WORKDIR /root
+
+COPY README.md .
